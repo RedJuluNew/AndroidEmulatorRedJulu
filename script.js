@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var password = document.getElementById('password').value;
 
     // Hardcoded Benutzername und Passwort überprüfen
-    if (username === 'hardcoded_username' && password === 'hardcoded_password') {
+    if (username === 'admin' && password === 'adminpw') {
         alert('Anmeldung erfolgreich!');
         // Hier könntest du zur nächsten Seite weiterleiten oder andere Aktionen ausführen
     } else {
