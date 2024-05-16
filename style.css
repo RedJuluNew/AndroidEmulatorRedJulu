@@ -44,7 +44,8 @@ button:hover {
 input[type="text"],
 input[type="password"],
 button {
-    width: 80%; /* Breite auf 80% reduziert */
+    width: 70%; /* Breite auf 70% reduziert */
+    max-width: 300px; /* Maximalbreite auf 300px begrenzt */
     padding: 10px;
     margin: 10px auto; /* Zentrierung der Boxen */
     border-radius: 5px;
