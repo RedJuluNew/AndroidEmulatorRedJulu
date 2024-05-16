@@ -8,10 +8,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Hardcoded Benutzername und Passwort überprüfen
     if (username === 'admin' && password === 'adminpw') {
         alert('Anmeldung erfolgreich!');
-        // Hier könntest du zur nächsten Seite weiterleiten oder andere Aktionen ausführen
-        window.location.href = 'dashboard/index.html';
+        // Speichern, dass der Benutzer eingeloggt ist
+        sessionStorage.setItem('loggedIn', 'true');
+        // Weiterleitung zum Dashboard
+        window.location.href = 'dashboard/index.html'; // Weiterleitung zur Dashboard-Seite
     } else {
         alert('Falscher Benutzername oder Passwort. Bitte versuche es erneut.');
-        // Hier könntest du dem Benutzer mitteilen, dass die Anmeldung fehlgeschlagen ist
     }
 });
